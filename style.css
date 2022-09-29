@@ -1,0 +1,21 @@
+body{
+	font-family:  Arial;
+
+}
+
+h1{
+	text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+button{
+	margin:  10px;
+
+}
