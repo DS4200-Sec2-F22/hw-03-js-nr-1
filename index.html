@@ -20,26 +20,59 @@
         </div>
 
         <div class="column">
-            
             <button type = "button" id = "subButton1"> Reveal Marks and Channels </button>
-
             <div id = "display1">
-            
-
-
+                <h3>VISUALIZATION 1</h3>
+                <p>Marks:
+                    <ul>
+                        <li>Areas, representing states;</li>
+                        <li>Lines, representing state borders;</li>
+                        <li>Lines, representing electoral vote count</li>
+                    </ul>
+                    Channels:<br>
+                    <ul>
+                        <li>Color hue represents the candidate that each state voted for (Clinton vs. Trump vs. mixed votes cast). This is effective because blue and red are easily discriminable, as well as having established meanings.</li>
+                        <li>Size is also a channel, since the length of the blue and red lines above the map represent the number of would-be votes cast for each candidate. This is effective because users will be able to accurately tell which bar is longer, due to the arrow at the midpoint.</li>
+                    </ul>
+                </p>
+                <h3>VISUALIZATION 2</h3>
+                <p>Marks:
+                    <ul>
+                        <li>Points, representing an aggregation of similar batted balls (given two attributes);</li>
+                        <li>Lines, representing separation between types of hits (e.g. fly balls vs. line drives);</li>
+                        <li>Areas of color, representing similarly-effective batted balls</li>
+                    </ul>
+                    Channels:
+                    <ul>
+                        <li>Color hue and saturation represent scoring value of each ball. Hue represents whether a ball is below or above average, while saturation represents the magnitude of that value. This is effective because scoring value is divergent, so a divergent colormap works (see Colormap(s))</li>
+                        <li>Horizontal position represents the exit velocity of the ball, while vertical position represents the angle of a hit. This is effective because the visualization creates a 2D grid that plots items by these two attributes, helping demonstrate their interactions.</li></ul></p>
             </div>
 
             <button type = "button" id = "subButton2"> Reveal Colormap(s) </button>
 
             <div id = "display2">
-            
-
-
+                <p>
+                    <b>Visualization 1</b> uses a categorical colormap with two colors (red and blue), which represent Republican Donald Trump vs. Democrat Hillary Clinton, respectively.<br>
+                    This was an effective choice of colormap.
+                     <ul>
+                        <li>Since blue and red are already widely used for Democrat and Republican candidates, viewers will already associate the colors with the intended attributes.</li>
+                        <li>The categorical (either/or) nature of the votes-cast attribute makes a categorical colormap a natural choice.</li>
+                    </ul><br>
+                    <b>Visualization 2</b> uses a divergent colormap to represent scoring value of a batted ball, with pink representing below-average and orange representing above-average. This colormap is an effective choice.
+                    <ul><li>Relation to an established average is an ordered, divergent attribute, so a divergent colormap fits well.</li></ul>
+            </p>
             </div>
-
         </div>
-
     </div>
+
+<h2>Acknowledgements </h2>
+<div id="div3" class="container">
+    <ul>
+        <li>w3schools HTML and CSS tutorials:
+            <a href="url">https://www.w3schools.com/</a>
+        </li>
+    </ul>
+</div>
 
 <script src = "main.js"></script>
 
